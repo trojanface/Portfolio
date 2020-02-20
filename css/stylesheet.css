@@ -1,0 +1,20 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.mattsnavbar {
+    position: fixed;
+    left: 10px;
+    height: 100%;
+    width: 50px;
+    /*Made with neumorphism.io*/
+    border-radius: 0px;
+    background: #f3f3f3;
+    box-shadow:  6px 6px 12px #cacaca, 
+                 -6px -6px 12px #ffffff;
+}
+
+.mattsnavbar ul {
+    width: 50px;
+    list-style-type: none;
+}
