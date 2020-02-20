@@ -6,6 +6,17 @@ body {
     float: left;
 }
 
+.jumbotron {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png");
+    background-size: cover;
+    color: white;
+    /*Made with neumorphism.io*/
+    border-radius: 0px;
+    box-shadow:  6px 6px 12px #cacaca, 
+                -6px -6px 12px #ffffff;
+    }
+}
+
 @media only screen and (max-height: 600px) {
     /* Mobile Menu */
     .mattsnavbar {
