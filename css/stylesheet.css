@@ -2,19 +2,43 @@ body {
     background-color: #f3f3f3;
 }
 
-.mattsnavbar {
-    position: fixed;
-    left: 10px;
-    height: 100%;
-    width: 50px;
-    /*Made with neumorphism.io*/
-    border-radius: 0px;
-    background: #f3f3f3;
-    box-shadow:  6px 6px 12px #cacaca, 
-                 -6px -6px 12px #ffffff;
+@media only screen and (max-width: 767px) and (min-height: 600px) {
+    .mattsnavbar {
+        display: none;
+    }
 }
 
-.mattsnavbar ul {
-    width: 50px;
-    list-style-type: none;
+
+@media only screen and (min-width: 768px) and (min-height: 600px) {
+    /* Desktop Menu */
+
+    .mattsnavbar {
+        text-align: center;
+        position: fixed;
+        left: 10px;
+        height: 100%;
+        width: 60px;
+        /*Made with neumorphism.io*/
+        border-radius: 0px;
+        background: #f3f3f3;
+        box-shadow:  6px 6px 12px #cacaca, 
+                    -6px -6px 12px #ffffff;
+        }
+
+    .mattsnavbar ul {
+        line-height: 2;
+        margin-left:5px;
+        font-size: 12px;
+        padding: 0;
+        width: 50px;
+        list-style-type: none;
+    }
+
+    .siteList {
+        margin-top: 20vh;
+    }
+
+    .socialList {
+        margin-top: 25vh;
+    }
 }
