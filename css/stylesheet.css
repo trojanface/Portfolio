@@ -2,16 +2,40 @@ body {
     background-color: #f3f3f3;
 }
 
-@media only screen and (max-width: 767px) and (min-height: 600px) {
+.wrapLeft {
+    float: left;
+}
+
+@media only screen and (max-height: 600px) {
+    /* Mobile Menu */
     .mattsnavbar {
         display: none;
     }
+    .mattsmobnavbar {
+                /*Made with neumorphism.io*/
+                border-radius: 0px;
+                background: #f3f3f3;
+                box-shadow:  6px 6px 12px #cacaca, 
+                            -6px -6px 12px #ffffff;
+    }
+
+    .mobsocialList {
+        position: fixed;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .mobsocialList {
+        position: static;
+        right: 0;
+    }
 }
 
-
-@media only screen and (min-width: 768px) and (min-height: 600px) {
+@media only screen and (min-height: 600px) {
     /* Desktop Menu */
-
+    .mattsmobnavbar {
+        display: none;
+    }
     .mattsnavbar {
         text-align: center;
         position: fixed;
@@ -34,11 +58,8 @@ body {
         list-style-type: none;
     }
 
-    .siteList {
-        margin-top: 20vh;
-    }
-
     .socialList {
-        margin-top: 25vh;
+      position: fixed;
+      bottom: 0;
     }
 }
