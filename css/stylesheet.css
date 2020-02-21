@@ -7,15 +7,12 @@ body {
 }
 
 .jumbotron {
-    margin-left: 5%;
+    z-index: -1;
+    margin-left: 4%;
     background-image: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png");
     background-size: cover;
     color: white;
     height: 100vh;
-    /*Made with neumorphism.io*/
-    border-radius: 0px;
-    box-shadow:  6px 6px 12px #cacaca, 
-                -6px -6px 12px #ffffff;
     
 }
 
@@ -24,13 +21,7 @@ body {
     .mattsnavbar {
         display: none;
     }
-    .mattsmobnavbar {
-                /*Made with neumorphism.io*/
-                border-radius: 0px;
-                background: #f3f3f3;
-                box-shadow:  6px 6px 12px #cacaca, 
-                            -6px -6px 12px #ffffff;
-    }
+
 
     .mobsocialList {
         position: fixed;
@@ -49,25 +40,37 @@ body {
         display: none;
     }
     .mattsnavbar {
+        z-index: 1;
         text-align: center;
         position: fixed;
         left: 10px;
         height: 100%;
         width: 60px;
-        /*Made with neumorphism.io*/
-        border-radius: 0px;
-        background: #f3f3f3;
-        box-shadow:  6px 6px 12px #cacaca, 
-                    -6px -6px 12px #ffffff;
         }
 
     .mattsnavbar ul {
+        text-align: center;
         line-height: 2;
-        margin-left:5px;
+        margin-left:-3px;
         font-size: 12px;
         padding: 0;
         width: 50px;
         list-style-type: none;
+        
+    }
+    .mattsnavbar .mainiconPad {
+        margin-bottom: 20px;
+    }
+    .mattsnavbar .mainImage {
+        width: 30px;
+        height: 30px;
+    }
+    .mattsnavbar .secondiconPad {
+        margin-bottom: 10px;
+    }
+    .mattsnavbar .secondImage {
+        width: 15px;
+        height: 15px;
     }
 
     .socialList {
