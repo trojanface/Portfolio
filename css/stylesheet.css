@@ -33,6 +33,14 @@ body {
     margin-bottom: 4%;
 }
 
+.footerClass {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: darkblue;
+    color: white;
+}
+
 @media only screen and (max-height: 600px) {
     /* Mobile Menu */
     .mattsnavbar {
@@ -82,7 +90,14 @@ body {
     .mattsnavbar .mainImage {
         width: 30px;
         height: 30px;
+        filter: opacity(70%);
+        transition: filter 1s;
     }
+    .mattsnavbar .mainImage:hover {
+        filter: opacity(100%);
+  
+    }
+
     .mattsnavbar .secondiconPad {
         margin-bottom: 10px;
     }
@@ -95,4 +110,5 @@ body {
       position: fixed;
       bottom: 0;
     }
+
 }
