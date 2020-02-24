@@ -8,13 +8,14 @@ body {
 
 .jumbotron {
     z-index: -1;
-    margin-left: 3%;
     background-image: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png");
     background-size: cover;
     color: white;
     height: 100vh;
     
 }
+
+
 
 .obiWan h1 {
     padding-top: 10%;
@@ -41,6 +42,10 @@ body {
     color: white;
 }
 
+.footerText {
+    text-align: center; 
+}
+
 @media only screen and (max-height: 600px) {
     /* Mobile Menu */
     .mattsnavbar {
@@ -51,6 +56,10 @@ body {
     .mobsocialList {
         position: fixed;
         right: 0;
+    }
+    .contentContainer {
+        width: 100vw;
+        margin-left: 0;
     }
 }
 @media only screen and (max-width: 990px) {
@@ -64,6 +73,7 @@ body {
     .mattsmobnavbar {
         display: none;
     }
+
     .mattsnavbar {
         background-color: #f3f3f3;
         z-index: 1;
@@ -110,5 +120,8 @@ body {
       position: fixed;
       bottom: 0;
     }
-
+    .contentContainer {
+        width: 94vw;
+        margin-left: 65px;
+    }
 }
