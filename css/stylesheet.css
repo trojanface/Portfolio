@@ -37,7 +37,7 @@ body {
 .footerClass {
     position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     background-color: darkblue;
     color: white;
 }
