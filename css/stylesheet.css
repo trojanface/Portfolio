@@ -8,7 +8,8 @@ body {
 
 .jumbotron {
     z-index: -1;
-    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png");
+    /*Image sourced from https://www.pixabay.com*/
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg");
     background-size: cover;
     color: white;
     height: 100vh;
