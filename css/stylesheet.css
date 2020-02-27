@@ -2,18 +2,13 @@ body {
     background-color: #ffffff;
 }
 
-.wrapLeft {
-    float: left;
-}
-
 .jumbotron {
-    z-index: -1;
     /*Image sourced from https://www.pixabay.com*/
     background-image: url("https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg");
     background-size: cover;
     color: white;
     height: 100vh;
-    
+    border-radius: 0;
 }
 
 
