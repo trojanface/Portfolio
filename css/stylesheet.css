@@ -43,6 +43,7 @@ body {
         right: 0;
     }
     .contentContainer {
+
         width: 100vw;
         margin-left: 0;
     }
@@ -110,19 +111,39 @@ body {
         height: 2.3vw;
       }
     .contentContainer {
+        color: white;
+        padding-top: 10vh;
         padding-left: 20vw;
     }
-    #glowCircle {
-        transform-origin: 50% 50%; 
-        transform-origin: center center;
+    .glowCircle {
+        transform-origin: 55vw 110vh; 
     }
+    .spinR {
+    -webkit-animation: rotatingR 60s linear infinite;
+    }
+    .spinL {
+        -webkit-animation: rotatingL 60s linear infinite;
+        }
+        .wedgeClass {
+            transform: rotate(90deg);
+            transition: transform 2.35s;
+        }
 }
 
-@keyframes shadow-pulse {
-    0% {
-      filter: drop-shadow( 0 0 40px rgb(155, 243, 255));
+@-webkit-keyframes rotatingL {
+    from {
+      -webkit-transform: rotate(360deg);
     }
-    100% {
-      filter: drop-shadow( 0 0 40px rgb(175, 255, 170));
+    to {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes rotatingR {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
     }
   }

@@ -100,31 +100,45 @@
 
   <svg style="position:absolute;right:0;bottom:0;" class="EVICircle" width="60vw" height="100vh">
     <circle
-      style="stroke-dasharray: 80 40; -webkit-animation: rotatingR 25s linear infinite;transform-origin: center center;"
-      stroke="rgba(113, 145, 150,0.2)" stroke-width="25vw" fill="transparent" r="35vw" cx="55vw" cy="110vh" />
-    <circle
-      style="-webkit-animation: rotatingL 65s linear infinite;transform-origin: center center; stroke-dasharray: 80 60;"
-      stroke="rgba(113, 145, 150,0.1)" stroke-width="40vw" fill="transparent" r="30vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgba(36, 56, 59,0.6)" stroke-width="30vw"
+      class="glowCircle spinR" style="stroke-dasharray: 400 200;"
+      stroke="rgba(1,18,60,0.05)" stroke-width="25vw" fill="transparent" r="35vw" cx="55vw" cy="110vh" />
+    <circle class="glowCircle spinL" style="stroke-dasharray: 400 300;" stroke="rgba(1,18,60,0.05)" stroke-width="40vw" fill="transparent"
+      r="30vw" cx="55vw" cy="110vh" />
+      
+      <circle id="wedge1" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,28,60,0.07)" stroke-width="30vw"
+      fill="transparent" r="40vw" cx="55vw" cy="110vh" />
+
+    <circle id="wedge2" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,18,30,0.07)" stroke-width="30vw"
       fill="transparent" r="37.9vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgba(123, 181, 192,0.4)" stroke-width="25vw"
+    <circle id="wedge3" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,18,80,0.04)" stroke-width="25vw"
       fill="transparent" r="35.5vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgba(53, 73, 77,0.6)" stroke-width="30vw"
-      fill="transparent" r="39vw" cx="55vw" cy="110vh" />
-    <circle stroke="rgb(155, 243, 255)" stroke-width="40" fill="rgb(155, 243, 255)" r="20vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgb(113, 145, 150)" stroke-width="0.5vw"
+    
+    <circle  stroke-width="40" fill="rgba(1,18,60,0.07)" r="20vw" cx="55vw" cy="110vh" />
+    <circle id="pBar1" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,18,60,0.09)" stroke-width="0.5vw"
       fill="transparent" r="38vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgb(113, 145, 150)" stroke-width="1vw"
+    <circle id="pBar2" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,18,60,0.09)" stroke-width="1vw"
       fill="transparent" r="35vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" stroke="rgba(113, 145, 150,0.8)" stroke-width="1.5vw" fill="transparent" r="41.5vw"
+    <circle class="spinR glowCircle"  style="stroke-dasharray: 40 20;" stroke="rgba(1,18,60,0.08)" stroke-width="1.5vw" fill="transparent" r="41.5vw"
       cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 40;" stroke="rgba(113, 145, 150,1)" stroke-width="3.5vw"
+    <circle id="pBar4" class="wedgeClass glowCircle" style="stroke-dasharray: 400 200;" stroke="rgba(1,18,60,0.09)" stroke-width="3.5vw"
       fill="transparent" r="41.5vw" cx="55vw" cy="110vh" />
-    <circle id="glowCircle" style="stroke-dasharray: 80 20;" stroke="rgb(113, 145, 150)" stroke-width="1vw"
+    <circle id="pBar3" class="wedgeClass glowCircle" style="stroke-dasharray: 400 100;" stroke="rgba(1,18,60,0.09)" stroke-width="1vw"
       fill="transparent" r="45vw" cx="55vw" cy="110vh" />
   </svg>
 
-
+  <div class="contentContainer">
+    <div class="container-fluid">
+      <div class="pt-4 row">
+        <div class="offset-md-1"></div>
+        <div class="col-md-8">
+          <h1 >Full-stack developer</h1>
+          <p >HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, MongoDB, MySQL and more.</p>
+          <p>Let's work together and put the awesome back in awesome website development.</p>
+          <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contact Me</a>
+          </div>
+          </div>
+          </div>
+  
   <!--Hero Image-->
   <!-- <div class="contentContainer">
         <div class="container-fluid">
@@ -147,7 +161,7 @@
 
 
 
-
+<script src="script.js"></script>
   <!--Bootstrap Javascript/jQuery-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
