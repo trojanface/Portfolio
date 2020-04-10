@@ -115,6 +115,12 @@ body {
         padding-top: 10vh;
         padding-left: 20vw;
     }
+    .contentContainer h1 {
+        font-size: 3vw;
+    }
+    .contentContainer p {
+        font-size: 1.4vw;
+    }
     .glowCircle {
         transform-origin: 55vw 110vh; 
     }
@@ -127,6 +133,9 @@ body {
         .wedgeClass {
             transform: rotate(90deg);
             transition: transform 2.35s;
+        }
+        .lineSpacing {
+            padding-bottom: 3vh;
         }
 }
 

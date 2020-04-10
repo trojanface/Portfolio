@@ -43,6 +43,8 @@ function update() {
     setProgress("#pBar3", 50);
     randRotate("#pBar3");
     randRotate("#pBar4");
+    randRotate("#pBar6");
+
     // randRotate("#hourCircle", "#hourCircleShadow");
     // randRotate("#secondsCircle", "#secondsCircleShadow");
     // setProgress("#secondsCircle", moment().minute() / 2);
