@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /* 
@@ -67,8 +67,8 @@ body {
         width: 20vw;
     }
     .graphicNavbar {
-        background: rgb(71,156,170);
-        background: linear-gradient(90deg, rgba(4,60,85,1) 0%, rgba(1,18,60,1) 9%, rgba(23,26,33,1) 100%);
+        background: rgb(218, 229, 255);
+        background: linear-gradient(85deg, rgb(0, 0, 0) 0%, rgb(102, 18, 18) 9%,rgb(97, 0, 0) 100%);
         z-index: -2;
         position: fixed;
         height: 100%;
@@ -81,8 +81,8 @@ body {
     }
     .mattsnavbar a {
         font: bold 40px futura, sans-serif;
-        color: rgb(58, 155, 172);
-        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 3px rgb(255, 94, 0);
            }
     .mattsnavbar a:hover {
         font: bold 40px arial, sans-serif;
@@ -124,7 +124,7 @@ body {
         height: 2.3vw;
       }
     .contentContainer {
-        color: white;
+        color: rgb(0, 0, 0);
         padding-top: 10vh;
         padding-left: 20vw;
     }
@@ -132,7 +132,7 @@ body {
         font-size: 3vw;
     }
     .contentContainer p {
-        font-size: 1.4vw;
+        font-size: 2vw;
     }
     .glowCircle {
         transform-origin: 55vw 110vh; 
@@ -152,7 +152,7 @@ body {
         }
 }
 .largeMarg {
-    padding-top: 70vh;
+    padding-top: 60vh;
 }
 
 @-webkit-keyframes rotatingL {
