@@ -61,39 +61,43 @@ body {
         display: none;
     }
     .mattsnavbar {
-        background: rgb(71,156,170);
-        background: linear-gradient(90deg, rgba(4,60,85,1) 0%, rgba(1,18,60,1) 9%, rgba(23,26,33,1) 100%);
         z-index: 1;
-        text-align: center;
         position: fixed;
         height: 100%;
         width: 20vw;
     }
-
-    .mattsnavbar a {
-        font: bold 40px arial, sans-serif;
-        background-color: #ffffff;
-        color: transparent;
-        text-shadow: 2px 2px 3px rgba(10, 21, 48, 0.5);
-        -webkit-background-clip: text;
-           -moz-background-clip: text;
-                background-clip: text;
+    .graphicNavbar {
+        background: rgb(71,156,170);
+        background: linear-gradient(90deg, rgba(4,60,85,1) 0%, rgba(1,18,60,1) 9%, rgba(23,26,33,1) 100%);
+        z-index: -2;
+        position: fixed;
+        height: 100%;
+        width: 22vw;
+        transform: skewX(-6deg);
+        transform-origin: top left;
     }
+    .alignR {
+        text-align: right;
+    }
+    .mattsnavbar a {
+        font: bold 40px futura, sans-serif;
+        color: rgb(58, 155, 172);
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+           }
     .mattsnavbar a:hover {
         font: bold 40px arial, sans-serif;
         background-color: #000000;
         color: transparent;
-        text-shadow: 0px 3px 1px rgb(255, 166, 64);
+        text-shadow: 0px 3px 1px rgb(255, 136, 0);
         -webkit-background-clip: text;
            -moz-background-clip: text;
                 background-clip: text;
     }
     .mattsnavbar .mainLinks {
-        margin-top: 8vh;
-        text-align: center;
-        padding: 0;
+        margin-top: 11vh;
         width: 100%;
     }
+
     .mattsnavbar ul {
         padding: 0;
         list-style-type: none;
@@ -103,9 +107,18 @@ body {
         bottom: 0.5vh;
     }
     .socialItem {
-        margin-left: 3.2vw;
+        margin-left: 2.4vw;
+    }
+    .pad1 {
+        padding-right: 1.5vw;
     }
 
+    .pad2 {
+        padding-right: 2vw;
+    }
+    .pad3 {
+        padding-right: 3.5vw;
+    }
     .socialItem img {
         width: 2.3vw;
         height: 2.3vw;
@@ -137,6 +150,9 @@ body {
         .lineSpacing {
             padding-bottom: 3vh;
         }
+}
+.largeMarg {
+    padding-top: 70vh;
 }
 
 @-webkit-keyframes rotatingL {
