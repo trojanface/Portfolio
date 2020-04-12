@@ -1,5 +1,9 @@
 body {
     background-color: #ffffff;
+    height:100%;
+    margin:0; 
+    padding:0; 
+
 }
 
 /* 
@@ -33,32 +37,73 @@ body {
     text-align: center;
 } */
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-width: 1024px) {
     /* Mobile Menu */
     .mattsnavbar {
         display: none;
     }
-    .mobsocialList {
-        position: fixed;
-        right: 0;
-    }
     .contentContainer {
-
-        width: 100vw;
+        width: 98vw;
+        padding-left: 2%;
+        padding-right: 2%;
         margin-left: 0;
     }
+    .mattsmobnavbar ul {
+        line-height: 3;
+    }
+    .mattsmobnavbar a {
+        font: bold 20px futura, sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 15px;
+    }
+
+    .mobsocialList {
+        display: inline;
+        transform: translateX(120%);
+    }
+    .mattsmobnavbar {
+  
+        background: linear-gradient(85deg, rgb(102, 18, 18) 9%, rgb(97, 0, 0) 100%);
+
+    }
+    .graphicNavbar {
+        background: linear-gradient(85deg, rgb(102, 18, 18) 9%, rgb(97, 0, 0) 100%);
+        z-index: -2;
+        position: absolute;
+        height:8vh;
+        width: 100%;
+        transform: skewY(-1deg);
+        transform-origin: top left;
+        left: 0;
+    }
+    .largeMarg {
+        margin: 20%;
+        background-color: rgba(255,255,255,0.5);
+        padding: 5%;
+    }
 }
+
 
 @media only screen and (max-width: 990px) {
     .mobsocialList {
-        position: static;
+        font-size: small;
+        transform: translateX(0%);
+    }
+    .graphicNavbar {
+        height: 12vh;
     }
 }
 
-@media only screen and (min-height: 600px) {
+@media only screen and (min-width: 1025px) {
     /* Desktop Menu */
     .mattsmobnavbar {
         display: none;
+      
+    }
+    .largeMarg {
+        margin-bottom: 20%;
+        background-color: rgba(255,255,255,0.5);
+        padding: 1%;
     }
     .mattsnavbar {
         z-index: 1;
@@ -68,7 +113,7 @@ body {
     }
     .graphicNavbar {
         background: rgb(218, 229, 255);
-        background: linear-gradient(85deg, rgb(0, 0, 0) 0%, rgb(102, 18, 18) 9%,rgb(97, 0, 0) 100%);
+        background: linear-gradient(85deg, rgb(0, 0, 0) 0%, rgb(102, 18, 18) 9%, rgb(97, 0, 0) 100%);
         z-index: -2;
         position: fixed;
         height: 100%;
@@ -82,37 +127,33 @@ body {
     .mattsnavbar a {
         font: bold 40px futura, sans-serif;
         color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 3px rgb(255, 94, 0);
-           }
+        
+    }
     .mattsnavbar a:hover {
         font: bold 40px arial, sans-serif;
         background-color: #000000;
         color: transparent;
         text-shadow: 0px 3px 1px rgb(255, 136, 0);
         -webkit-background-clip: text;
-           -moz-background-clip: text;
-                background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
     }
     .mattsnavbar .mainLinks {
         margin-top: 11vh;
         width: 100%;
     }
-
     .mattsnavbar ul {
         padding: 0;
         list-style-type: none;
     }
-       .socialList {
+    .socialList {
         position: fixed;
         bottom: 0.5vh;
     }
-    .socialItem {
-        margin-left: 2.4vw;
-    }
+  
     .pad1 {
         padding-right: 1.5vw;
     }
-
     .pad2 {
         padding-right: 2vw;
     }
@@ -122,7 +163,7 @@ body {
     .socialItem img {
         width: 2.3vw;
         height: 2.3vw;
-      }
+    }
     .contentContainer {
         color: rgb(0, 0, 0);
         padding-top: 10vh;
@@ -134,41 +175,47 @@ body {
     .contentContainer p {
         font-size: 2vw;
     }
-    .glowCircle {
-        transform-origin: 55vw 110vh; 
+    .lineSpacing {
+        padding-bottom: 3vh;
     }
-    .spinR {
-    -webkit-animation: rotatingR 60s linear infinite;
-    }
-    .spinL {
-        -webkit-animation: rotatingL 60s linear infinite;
-        }
-        .wedgeClass {
-            transform: rotate(90deg);
-            transition: transform 2.35s;
-        }
-        .lineSpacing {
-            padding-bottom: 3vh;
-        }
+
 }
-.largeMarg {
-    padding-top: 60vh;
+
+.socialItem {
+    margin-left: 2.4vw;
+}
+
+.glowCircle {
+    transform-origin: 55vw 110vh;
+}
+
+.spinR {
+    -webkit-animation: rotatingR 60s linear infinite;
+}
+
+.spinL {
+    -webkit-animation: rotatingL 60s linear infinite;
+}
+
+.wedgeClass {
+    transform: rotate(90deg);
+    transition: transform 2.35s;
 }
 
 @-webkit-keyframes rotatingL {
     from {
-      -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
     to {
-      -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
-  }
-  
-  @-webkit-keyframes rotatingR {
+}
+
+@-webkit-keyframes rotatingR {
     from {
-      -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     to {
-      -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
     }
-  }
+}

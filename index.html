@@ -17,8 +17,9 @@
 
   <!--Mobile Navbar-->
   <div class="mattsmobnavbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <!--Site links-->
+      <div class="graphicNavbar"></div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,31 +27,36 @@
       <div class="collapse navbar-collapse  mobsiteList" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a  href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a  href="#aboutMe">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a  href="#contactMe">Contact</a>
           </li>
+  <!--Social Menu-->
+ 
         </ul>
-        <!--Social Menu-->
-        <ul class="navbar-nav mobsocialList">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/matthew.teague.37" target="_blank">Facebook <span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/trojanface" target="_blank">GitHub</a>
-          </li>
-        </ul>
+        <div class="navbar-nav mobsocialList">
+        
+ 
+            <a class="socialItem" href="https://www.facebook.com/matthew.teague.37" target="_blank"><img height="32"
+              width="32" class="secondImage" src="https://image.flaticon.com/icons/svg/733/733547.svg"
+              alt="Facebook icon"></a>
+      
+            <a class="socialItem" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank"><img height="32"
+              width="32" class="secondImage" src="https://image.flaticon.com/icons/svg/1409/1409945.svg"
+              alt="LinkedIn icon"></a>
+      
+            <a class="socialItem" href="https://github.com/trojanface" target="_blank"><img height="32" width="32"
+              class="secondImage" src="https://image.flaticon.com/icons/svg/270/270798.svg" alt="GitHub icon"></a>
+        
+        
+        </div>
 
       </div>
     </nav>
@@ -140,7 +146,7 @@
   </svg>
 
   <div class="contentContainer">
-    <svg style="z-index:-2; position:absolute;top:0;left:0;" width="99vw" height="600%">
+    <svg style="z-index:-2; position:fixed;top:0;left:0;" width="100%" height="100%">
       <defs>
         <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
 
@@ -154,9 +160,9 @@
       <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"></rect>
     </svg>
     <div class="container-fluid">
-      <div class="pt-4 row">
-        <div class="offset-md-1"></div>
-        <div class="col-md-10">
+      <div class="img-thumbnail rounded mx-auto d-block pt-4 largeMarg row">
+        <div class="offset-lg-1"></div>
+        <div class="col-lg-10">
           <h1 id="home" class="lineSpacing">Hello there!</h1>
           <p class="lineSpacing">My name is Matt and I'm a full-stack web developer. Helping businesses achieve their
             potential online is my passion.</p>
@@ -164,9 +170,9 @@
           <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contact Me</a>
         </div>
       </div>
-      <div class="largeMarg row">
-        <div class="offset-md-1"></div>
-        <div class="alignR px-0 col-md-10">
+      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
+        <div class="offset-lg-1"></div>
+        <div class="alignR px-0 col-lg-10">
           <h1 id="aboutMe" class="lineSpacing">About Me</h1>
           <p class="lineSpacing">The internet is the most important first impression of any business. It's my dream to
             work for a company
@@ -177,84 +183,85 @@
             Stargate then click below.</p>
         </div>
       </div>
-    </div>
-    <div class="largeMarg row">
-      <!--Content-->
-      <div class="row mr-0">
-        <div class="offset-md-1"></div>
-        <div class="col-md-10">
-          <h1 id="portfolio">My Projects</h1>
-          <div class="row my-5">
-            <div class="col-md-6 mb-3">
-              <!--Image sourced from https://www.pixabay.com-->
-              <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_1280.jpg"
-                alt="My first website" class="img-thumbnail rounded mx-auto d-block">
+      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
+        <!--Content-->
+        <div class="row mr-0">
+          <div class="offset-lg-1"></div>
+          <div class="col-lg-10">
+            <h1 id="portfolio">My Projects</h1>
+            <div class="row my-5">
+              <div class="col-lg-6 mb-3">
+                <!--Image sourced from https://www.pixabay.com-->
+                <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_1280.jpg"
+                  alt="My first website" class="img-thumbnail rounded mx-auto d-block">
+              </div>
+              <div class="col-lg-6">
+                <h3>My first project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
+                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
+                  nihil.</p>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h3>My first project</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                nihil.</p>
+            <div class="row my-5">
+              <div class="col-lg-6 mb-3">
+                <!--Image sourced from https://www.pixabay.com-->
+                <img src="https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673_1280.jpg" alt="My second website"
+                  class="img-thumbnail rounded mx-auto d-block">
+              </div>
+              <div class="col-lg-6">
+                <h3>My Second project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
+                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
+                  nihil.</p>
+              </div>
             </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-md-6 mb-3">
-              <!--Image sourced from https://www.pixabay.com-->
-              <img src="https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673_1280.jpg" alt="My second website"
-                class="img-thumbnail rounded mx-auto d-block">
-            </div>
-            <div class="col-md-6">
-              <h3>My Second project</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                nihil.</p>
-            </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-md-6 mb-3">
-              <!--Image sourced from https://www.pixabay.com-->
-              <img src="https://cdn.pixabay.com/photo/2015/01/20/14/27/office-605503_1280.jpg" alt="My third website"
-                class="img-thumbnail rounded mx-auto d-block">
-            </div>
-            <div class="col-md-6">
-              <h3>My Third project</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                nihil.</p>
+            <div class="row my-5">
+              <div class="col-lg-6 mb-3">
+                <!--Image sourced from https://www.pixabay.com-->
+                <img src="https://cdn.pixabay.com/photo/2015/01/20/14/27/office-605503_1280.jpg" alt="My third website"
+                  class="img-thumbnail rounded mx-auto d-block">
+              </div>
+              <div class="col-lg-6">
+                <h3>My Third project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
+                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
+                  nihil.</p>
+              </div>
             </div>
           </div>
         </div>
+  
       </div>
-
-    </div>
-    <div class="largeMarg row">
-        <div class="offset-md-1"></div>
-        <div class="col-md-10">
-          <h1 id="contactMe">Get in touch</h1>
-          <!--Contact form-->
-          <form>
-            <label for="contactFormInput">Details</label>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
+          <div class="offset-lg-1"></div>
+          <div class="col-lg-10">
+            <h1 id="contactMe">Get in touch</h1>
+            <!--Contact form-->
+            <form>
+              <label for="contactFormInput">Details</label>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
+              <div class="form-group">
+                <label for="contactFormInput">Email address</label>
+                <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
               </div>
-            </div>
-            <div class="form-group">
-              <label for="contactFormInput">Email address</label>
-              <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label for="contactFormInputText">Message</label>
-              <textarea class="form-control" id="contactFormInputText" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-          </form>
+              <div class="form-group">
+                <label for="contactFormInputText">Message</label>
+                <textarea class="form-control" id="contactFormInputText" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+  
       </div>
-
     </div>
+    
   </div>
 
 
@@ -265,7 +272,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/ulg/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
