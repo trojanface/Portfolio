@@ -62,3 +62,16 @@ function update() {
     // randRotate("#circle3");
     // randRotate("#randSpinner3", "#circle2");
 }
+
+//Taken from https://codepen.io/annalarson/pen/GesqK
+window.onload = function () {
+    $(window).scroll(function () {
+        $('.hideme').each(function (i) {
+            var top_of_object = $(this).position().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > top_of_object) {
+                $(this).fadeTo("slow" , 1)
+            }
+        });
+    });
+};

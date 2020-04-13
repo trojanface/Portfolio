@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/stylesheet.css">
+  <script src="https://kit.fontawesome.com/690c0f0a79.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,38 +25,40 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse  mobsiteList" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a  href="#home">Home <span class="sr-only">(current)</span></a>
+            <a href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a  href="#aboutMe">About</a>
+            <a href="#aboutMe">About</a>
           </li>
           <li class="nav-item">
             <a href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a  href="#contactMe">Contact</a>
+            <a href="#contactMe">Contact</a>
           </li>
-  <!--Social Menu-->
- 
+          <!--Social Menu-->
+
         </ul>
+
         <div class="navbar-nav mobsocialList">
-        
- 
-            <a class="socialItem" href="https://www.facebook.com/matthew.teague.37" target="_blank"><img height="32"
+
+
+          <a class="socialItem" href="https://www.facebook.com/matthew.teague.37" target="_blank"><img height="32"
               width="32" class="secondImage" src="https://image.flaticon.com/icons/svg/733/733547.svg"
               alt="Facebook icon"></a>
-      
-            <a class="socialItem" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank"><img height="32"
-              width="32" class="secondImage" src="https://image.flaticon.com/icons/svg/1409/1409945.svg"
+
+          <a class="socialItem" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank"><img
+              height="32" width="32" class="secondImage" src="https://image.flaticon.com/icons/svg/1409/1409945.svg"
               alt="LinkedIn icon"></a>
-      
-            <a class="socialItem" href="https://github.com/trojanface" target="_blank"><img height="32" width="32"
+
+          <a class="socialItem" href="https://github.com/trojanface" target="_blank"><img height="32" width="32"
               class="secondImage" src="https://image.flaticon.com/icons/svg/270/270798.svg" alt="GitHub icon"></a>
-        
-        
+
+
         </div>
 
       </div>
@@ -67,6 +70,7 @@
 
   <nav class="mattsnavbar">
     <div class="graphicNavbar"></div>
+    <img src="Mlogo.png" id="logo" width="150vw" height="70vh">
     <!--Site Links-->
     <ul class="siteList">
       <li>
@@ -105,7 +109,7 @@
 
   </nav>
 
-  <svg style="position:absolute;right:0;top:0;z-index:-1;" class="EVICircle" width="60vw" height="240vh">
+  <svg id="EVICircle" width="60vw" height="240vh">
     <circle class="glowCircle spinR" style="stroke-dasharray: 400 200;" stroke="rgba(231, 231, 231,0.52)"
       stroke-width="25vw" fill="transparent" r="35vw" cx="55vw" cy="110vh" />
     <circle class="glowCircle spinL" style="stroke-dasharray: 400 300;" stroke="rgba(212, 212, 212,0.52)"
@@ -170,7 +174,7 @@
           <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contact Me</a>
         </div>
       </div>
-      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
+      <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
         <div class="offset-lg-1"></div>
         <div class="alignR px-0 col-lg-10">
           <h1 id="aboutMe" class="lineSpacing">About Me</h1>
@@ -181,9 +185,10 @@
           <p class="lineSpacing">If your interested in working with me or if you just want to say hi and talk about Star
             Trek, Star Wars or
             Stargate then click below.</p>
+          
         </div>
       </div>
-      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
+      <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
         <!--Content-->
         <div class="row mr-0">
           <div class="offset-lg-1"></div>
@@ -192,76 +197,74 @@
             <div class="row my-5">
               <div class="col-lg-6 mb-3">
                 <!--Image sourced from https://www.pixabay.com-->
-                <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_1280.jpg"
-                  alt="My first website" class="img-thumbnail rounded mx-auto d-block">
+                <img src="screenshot.png" alt="Code Quiz Screenshot" class="img-thumbnail rounded mx-auto d-block">
               </div>
               <div class="col-lg-6">
-                <h3>My first project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                  nihil.</p>
+                <h3>My Javascript Quiz</h3>
+                <p>This is a fun quiz designed to test your proficency with javascript concepts. It is a timed quiz
+                  where every incorrect answer will lose you 10 seconds of time.</p>
+                <a href="https://trojanface.github.io/codequiz/" target="_blank">View Here</a>
               </div>
             </div>
             <div class="row my-5">
               <div class="col-lg-6 mb-3">
                 <!--Image sourced from https://www.pixabay.com-->
-                <img src="https://cdn.pixabay.com/photo/2015/01/09/02/45/laptop-593673_1280.jpg" alt="My second website"
-                  class="img-thumbnail rounded mx-auto d-block">
+                <img src="Homedes.png" alt="Coronavirus Guide" class="img-thumbnail rounded mx-auto d-block">
               </div>
               <div class="col-lg-6">
-                <h3>My Second project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                  nihil.</p>
+                <h3>Quarantine and Isolation Guide</h3>
+                <p>A web application designed to help people stay abreast of current news relating to the Coronavirus
+                  outbreak. It features world news and Australian news with the option of adding state based statistics
+                  also.</p>
+                <a href="https://amarr001.github.io/Project-1/" target="_blank">View Here</a>
               </div>
             </div>
             <div class="row my-5">
               <div class="col-lg-6 mb-3">
                 <!--Image sourced from https://www.pixabay.com-->
-                <img src="https://cdn.pixabay.com/photo/2015/01/20/14/27/office-605503_1280.jpg" alt="My third website"
-                  class="img-thumbnail rounded mx-auto d-block">
+                <img src="desktop.png" alt="My Weather Dashboard" class="img-thumbnail rounded mx-auto d-block">
               </div>
               <div class="col-lg-6">
-                <h3>My Third project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae quasi nulla amet ratione,
-                  nemo, dolorem corporis aspernatur excepturi sequi ea dolorum at corrupti fugit aperiam id quo quibusdam
-                  nihil.</p>
+                <h3>My Weather Dashboard</h3>
+                <p>This is a weather dashboard that allows the user to search for a city's weather data. It provides the
+                  current data as well as a five day forecast.</p>
+                <a href="https://trojanface.github.io/weatherdashboard/" target="_blank">View Here</a>
               </div>
             </div>
           </div>
         </div>
-  
+
       </div>
-      <div class="img-thumbnail rounded mx-auto d-block largeMarg row">
-          <div class="offset-lg-1"></div>
-          <div class="col-lg-10">
-            <h1 id="contactMe">Get in touch</h1>
-            <!--Contact form-->
-            <form>
-              <label for="contactFormInput">Details</label>
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
+      <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
+        <div class="offset-lg-1"></div>
+        <div class="col-lg-10">
+          <h1 id="contactMe">Get in touch</h1>
+          <!--Contact form-->
+          <form>
+            <label for="contactFormInput">Details</label>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
               </div>
-              <div class="form-group">
-                <label for="contactFormInput">Email address</label>
-                <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
               </div>
-              <div class="form-group">
-                <label for="contactFormInputText">Message</label>
-                <textarea class="form-control" id="contactFormInputText" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            </div>
+            <div class="form-group">
+              <label for="contactFormInput">Email address</label>
+              <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="contactFormInputText">Message</label>
+              <textarea class="form-control" id="contactFormInputText" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
         </div>
-  
+
       </div>
     </div>
-    
+
   </div>
 
 
@@ -269,9 +272,7 @@
 
   <script src="script.js"></script>
   <!--Bootstrap Javascript/jQuery-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/ulg/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>

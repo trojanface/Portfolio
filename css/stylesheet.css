@@ -42,6 +42,12 @@ body {
     .mattsnavbar {
         display: none;
     }
+    #EVICircle {
+        position:fixed;
+        right:0;
+        top:-35vh;
+        z-index:-1;
+    }
     .contentContainer {
         width: 98vw;
         padding-left: 2%;
@@ -93,15 +99,26 @@ body {
         height: 12vh;
     }
 }
+@media only screen and (max-height: 660px) {
+    .mattsnavbar #logo {
+        display:none;
 
+    }
+}
 @media only screen and (min-width: 1025px) {
     /* Desktop Menu */
     .mattsmobnavbar {
         display: none;
       
     }
+    #EVICircle {
+        position:absolute;
+        right:0;
+        top:0;
+        z-index:-1;
+    }
     .largeMarg {
-        margin-bottom: 20%;
+        margin-bottom: 40%;
         background-color: rgba(255,255,255,0.5);
         padding: 1%;
     }
@@ -150,7 +167,12 @@ body {
         position: fixed;
         bottom: 0.5vh;
     }
-  
+    .mattsnavbar #logo {
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+
+    }
     .pad1 {
         padding-right: 1.5vw;
     }
@@ -219,3 +241,7 @@ body {
         -webkit-transform: rotate(360deg);
     }
 }
+
+.hideme {
+    opacity: 0;
+  }
