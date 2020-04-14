@@ -12,6 +12,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/stylesheet.css">
   <script src="https://kit.fontawesome.com/690c0f0a79.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +75,7 @@
     <!--Site Links-->
     <ul class="siteList">
       <li>
-        <div class="alignR mainLinks">
+        <div class="alignR pad0 mainLinks">
           <a href="#home">Home</a>
         </div>
       </li>
@@ -167,10 +168,13 @@
       <div class="img-thumbnail rounded mx-auto d-block pt-4 largeMarg row">
         <div class="offset-lg-1"></div>
         <div class="col-lg-10">
-          <h1 id="home" class="lineSpacing">Hello there!</h1>
-          <p class="lineSpacing">My name is Matt and I'm a full-stack web developer. Helping businesses achieve their
-            potential online is my passion.</p>
-          <p class="lineSpacing">Let's work together and put the awesome back in awesome website development.</p>
+          <h1 id="home" class="lineSpacing">Hi there!</h1>
+          <p class="lineSpacing">My name is Matt and I'm a full-stack web developer. It's my job to make sure your
+            customers are left thinking about your webpage long after their first use.</p>
+          <p class="lineSpacing">From stylish designs to intricate scripts if it happens within the bounds of a screen,
+            then I'm your man.</p>
+          <p class="lineSpacing">Want to drop me a line? Just click below.</p>
+
           <a class="mattsButton btn btn-primary btn-lg" href="#contactMe" role="button">Contact Me</a>
         </div>
       </div>
@@ -178,14 +182,13 @@
         <div class="offset-lg-1"></div>
         <div class="alignR px-0 col-lg-10">
           <h1 id="aboutMe" class="lineSpacing">About Me</h1>
-          <p class="lineSpacing">The internet is the most important first impression of any business. It's my dream to
-            work for a company
-            doing good in the world and ensure their website leaves their customers more informed, more satisfied and
-            with a lignering sense of wow.</p>
-          <p class="lineSpacing">If your interested in working with me or if you just want to say hi and talk about Star
-            Trek, Star Wars or
-            Stargate then click below.</p>
-          
+          <p class="lineSpacing">With over 10 years personal experience in programming I decided to pursue it as a
+            career and I'm loving it. It's my mission to work with businesses wanting to achieve their fullest
+            potential online. Whether it's an exciting home page for customers, a useful web app for
+            employees or something completely new I want to be there to help. </p>
+          <p class="lineSpacing">After all, if first impressions count the most
+            then the internet is where the magic happens.</p>
+
         </div>
       </div>
       <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
@@ -200,9 +203,10 @@
                 <img src="screenshot.png" alt="Code Quiz Screenshot" class="img-thumbnail rounded mx-auto d-block">
               </div>
               <div class="col-lg-6">
-                <h3>My Javascript Quiz</h3>
-                <p>This is a fun quiz designed to test your proficency with javascript concepts. It is a timed quiz
-                  where every incorrect answer will lose you 10 seconds of time.</p>
+                <h3>Javascript Quiz</h3>
+                <p>A timed quiz designed to test your proficiency with javascript concepts. Created using HTML,
+                  Bootstrap, CSS and Javascript.
+                </p>
                 <a class="mattsButton" href="https://trojanface.github.io/codequiz/" target="_blank">View Here</a>
               </div>
             </div>
@@ -215,7 +219,8 @@
                 <h3>Quarantine and Isolation Guide</h3>
                 <p>A web application designed to help people stay abreast of current news relating to the Coronavirus
                   outbreak. It features world news and Australian news with the option of adding state based statistics
-                  also.</p>
+                  also. Created using HTML, CSS, Javascript, jQuery, Tailwind and AJAX API calls.
+                </p>
                 <a class="mattsButton" href="https://amarr001.github.io/Project-1/" target="_blank">View Here</a>
               </div>
             </div>
@@ -227,8 +232,11 @@
               <div class="col-lg-6">
                 <h3>My Weather Dashboard</h3>
                 <p>This is a weather dashboard that allows the user to search for a city's weather data. It provides the
-                  current data as well as a five day forecast.</p>
-                <a class="mattsButton" href="https://trojanface.github.io/weatherdashboard/" target="_blank">View Here</a>
+                  current data as well as a five day forecast. Created with HTML, CSS, Javascript, jQuery, Bootstrap and
+                  AJAX API calls.
+                </p>
+                <a class="mattsButton" href="https://trojanface.github.io/weatherdashboard/" target="_blank">View
+                  Here</a>
               </div>
             </div>
           </div>
@@ -240,23 +248,17 @@
         <div class="col-lg-10">
           <h1 id="contactMe">Get in touch</h1>
           <!--Contact form-->
-          <form>
+          <form action="mailto:matthewjteague@outlook.com?subject='Profile Enquiry'&body=" method="post"
+            enctype="text/plain">
             <label for="contactFormInput">Details</label>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
-              </div>
-            </div>
+            <input type="text" name="name" class="form-control" placeholder="Name">
             <div class="form-group">
               <label for="contactFormInput">Email address</label>
               <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
             </div>
             <div class="form-group">
               <label for="contactFormInputText">Message</label>
-              <textarea class="form-control" id="contactFormInputText" rows="3"></textarea>
+              <textarea name="body" class="form-control" id="contactFormInputText" rows="3"></textarea>
             </div>
             <button type="submit" class="mattsButton btn btn-primary">Send</button>
           </form>

@@ -3,7 +3,7 @@ body {
     height:100%;
     margin:0; 
     padding:0; 
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -54,11 +54,16 @@ body {
         padding-right: 2%;
         margin-left: 0;
     }
+    .contentContainer h1 {
+        font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-style: italic;
+    }
     .mattsmobnavbar ul {
         line-height: 3;
     }
     .mattsmobnavbar a {
-        font: bold 20px futura, sans-serif;
+        font: 20px 'Merriweather', serif;
         color: rgb(255, 255, 255);
         padding: 15px;
     }
@@ -118,7 +123,7 @@ body {
         z-index:-1;
     }
     .largeMarg {
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         background-color: rgba(255,255,255,0.5);
         padding: 1%;
     }
@@ -130,7 +135,7 @@ body {
     }
     .graphicNavbar {
         background: rgb(218, 229, 255);
-        background: linear-gradient(85deg,rgb(133, 23, 23) 9%, rgb(77, 0, 0) 100%);
+        background: linear-gradient(85deg,rgb(165, 32, 32) 9%, rgb(77, 0, 0) 100%);
         z-index: -2;
         position: fixed;
         height: 100%;
@@ -142,12 +147,18 @@ body {
         text-align: right;
     }
     .mattsnavbar a {
-        font: bold 40px futura, sans-serif;
+        font-family: 'Merriweather', serif;
+        font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
         color: rgb(255, 255, 255);
         
     }
     .mattsnavbar a:hover {
-        font: bold 40px arial, sans-serif;
+        font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
         background-color: #000000;
         color: transparent;
         text-shadow: 0px 3px 1px gold;
@@ -173,14 +184,17 @@ body {
         left: 2vw;
 
     }
-    .pad1 {
-        padding-right: 1.5vw;
+    .pad0 {
+        padding-right: 1vw;
     }
-    .pad2 {
+    .pad1 {
         padding-right: 2vw;
     }
+    .pad2 {
+        padding-right: 3vw;
+    }
     .pad3 {
-        padding-right: 3.5vw;
+        padding-right: 4vw;
     }
     .socialItem img {
         width: 2.3vw;
@@ -192,10 +206,13 @@ body {
         padding-left: 20vw;
     }
     .contentContainer h1 {
-        font-size: 3vw;
+        font-size: 2.2vw;
+        font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-style: italic;
     }
     .contentContainer p {
-        font-size: 2vw;
+        font-size: 1.2vw;
     }
     .lineSpacing {
         padding-bottom: 3vh;
