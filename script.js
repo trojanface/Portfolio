@@ -19,9 +19,9 @@ function randRotate(selectedElement, selectedElementShadow) {
     var d = values[3];
     var currentAngle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
     let newAngle = currentAngle + Math.floor(Math.random() < 0.5 ? (Math.random() * -30) : (Math.random() * 30));
-    document.querySelector(selectedElement).style.transform = "rotate(" + newAngle + "deg)";
+    document.querySelector(selectedElement).style.transform = `rotate( + ${newAngle} + deg)`;
     if (selectedElementShadow != null) {
-        document.querySelector(selectedElementShadow).style.transform = "rotate(" + newAngle + "deg)";
+        document.querySelector(selectedElementShadow).style.transform = `rotate( + ${newAngle} + deg)`;
     }
 }
 function start() {
