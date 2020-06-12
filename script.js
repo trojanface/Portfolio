@@ -54,14 +54,14 @@ function update() {
 
 //Taken from https://codepen.io/annalarson/pen/GesqK
 //Initially fades content in depending on whether it's in the users view port.
-window.onload = function () {
-    $(window).scroll(function () {
-        $('.hideme').each(function (i) {
-            var top_of_object = $(this).position().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > top_of_object) {
-                $(this).fadeTo("slow", 1)
-            }
-        });
-    });
-};
+// window.onload = function () {
+//     $(window).scroll(function () {
+//         $('.hideme').each(function (i) {
+//             var top_of_object = $(this).position().top;
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
+//             if (bottom_of_window > top_of_object) {
+//                 $(this).fadeTo("slow", 1)
+//             }
+//         });
+//     });
+// };

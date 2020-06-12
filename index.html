@@ -18,7 +18,7 @@
 <body>
 
   <!--Mobile Navbar-->
-  <div class="mattsmobnavbar">
+  <div class="mattsmobnavbar mobgrid">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <!--Site links-->
       <div class="graphicNavbar"></div>
@@ -98,13 +98,13 @@
     <!--Social Menu-->
 
     <div class="socialList">
-      <a class="socialItem" href="https://www.facebook.com/matthew.teague.37" target="_blank"><img height="42"
+      <a class="socialItem buzz-out-on-hover" href="https://www.facebook.com/matthew.teague.37" target="_blank"><img height="42"
           width="42" class="secondImage" src="https://image.flaticon.com/icons/svg/733/733547.svg"
           alt="Facebook icon"></a>
-      <a class="socialItem" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank"><img height="42"
+      <a class="socialItem buzz-out-on-hover" href="https://www.linkedin.com/in/matthew-teague-3496a4b2/" target="_blank"><img height="42"
           width="42" class="secondImage" src="https://image.flaticon.com/icons/svg/1409/1409945.svg"
           alt="LinkedIn icon"></a>
-      <a class="socialItem" href="https://github.com/trojanface" target="_blank"><img height="42" width="42"
+      <a class="socialItem buzz-out-on-hover" href="https://github.com/trojanface" target="_blank"><img height="42" width="42"
           class="secondImage" src="https://image.flaticon.com/icons/svg/270/270798.svg" alt="GitHub icon"></a>
     </div>
 
@@ -138,7 +138,7 @@
       stroke="rgba(255, 198, 132,0.73)" stroke-width="0.3vw" fill="transparent" r="13vw" cx="55vw" cy="110vh" />
   </svg>
   <!--Background crosses-->
-  <div class="contentContainer">
+  <div class="contentContainer mobgrid">
     <svg style="z-index:-2; position:fixed;top:0;left:0;" width="100%" height="100%">
       <defs>
         <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -159,12 +159,14 @@
         <!--Welcome-->
         <div class="col-lg-10">
           <h1 id="home" class="lineSpacing">Hi there!</h1>
-          <p class="lineSpacing">I'm Matt and I'm a full-stack web developer, lover of sleek designs and mind-bogglingly cool code. </p>
-          <p class="lineSpacing">From stylish websites to intricate scripts, if it happens within the bounds of a screen,
+          <p class="lineSpacing">I'm Matt and I'm a full-stack web developer, lover of sleek designs and mind-bogglingly
+            cool code. </p>
+          <p class="lineSpacing">From stylish websites to intricate scripts, if it happens within the bounds of a
+            screen,
             then I'm your man.</p>
           <p class="lineSpacing">Want to drop me a line? Just click below.</p>
 
-          <a class="mattsButton btn btn-primary btn-lg" href="#contactMe" role="button">Contact Me</a>
+          <a class="mattsButton btn btn-primary btn-lg hvr-bob bubble" href="mailto:matthewjteague@outlook.com?subject='Profile Enquiry'&body=" role="button">Get in touch</a>
         </div>
       </div>
       <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
@@ -180,11 +182,13 @@
             potential online. </p>
           <p class="lineSpacing">Whether it's an exciting home page for customers, a useful web app for
             employees or something completely new, I want to be there to help.</p>
-          <p class="lineSpacing">My technical skills include: HTML5, CSS3, Javascript, Bootstrap, Tailwind, jQuery, Express.js,
+          <p class="lineSpacing">My technical skills include: HTML5, CSS3, Javascript, Bootstrap, Tailwind, jQuery,
+            Express.js,
             React.js, Node.js, MongoDB, MySQL, Github and Terminal.</p>
-            <p class="lineSpacing">For a full copy of my resume click below!</p>
+          <p class="lineSpacing">For a full copy of my resume click below!</p>
 
-          <a class="mattsButton btn btn-primary btn-lg" href="MatthewTeagueResume2020internetsafe.pdf" download>Download PDF</a>
+          <a class="mattsButton buzz-out-on-hover btn btn-primary btn-lg" href="MatthewTeagueResume2020internetsafe.pdf" download>Download
+            PDF</a>
 
         </div>
       </div>
@@ -203,67 +207,71 @@
                 <p>A timed quiz designed to test your proficiency with javascript concepts. Created using HTML,
                   Bootstrap, CSS and Javascript.
                 </p>
-                <a class="mattsButton" href="https://trojanface.github.io/codequiz/" target="_blank">View Site</a>
-                <a class="mattsButton" href="https://github.com/trojanface/codequiz" target="_blank">View Repo</a>
+                <a class="mattsButton buzz-out-on-hover" href="https://trojanface.github.io/codequiz/" target="_blank">View Site</a>
+                <a class="mattsButton buzz-out-on-hover" href="https://github.com/trojanface/codequiz" target="_blank">View Repo</a>
               </div>
-              
-              </div>
+
             </div>
-            <div class="row my-5">
-              <div class="col-lg-6 mb-3">
-                <img src="Homedes.png" alt="Coronavirus Guide" class="img-thumbnail rounded mx-auto d-block">
-              </div>
-              <div class="col-lg-6">
-                <h3>Quarantine and Isolation Guide</h3>
-                <p>A web application designed to help people stay abreast of current news relating to the Coronavirus
-                  outbreak. It features world news and Australian news with the option of adding state based statistics
-                  also. Created using HTML, CSS, Javascript, jQuery, Tailwind and AJAX API calls.
-                </p>
-                <a class="mattsButton" href="https://amarr001.github.io/Project-1/" target="_blank">View Site</a>
-                <a class="mattsButton" href="https://github.com/amarr001/Project-1" target="_blank">View Repo</a>
-              </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-lg-6 mb-3">
+              <img src="Homedes.png" alt="Coronavirus Guide" class="img-thumbnail rounded mx-auto d-block">
             </div>
-            <div class="row my-5">
-              <div class="col-lg-6 mb-3">
-                <img src="desktop.png" alt="My Weather Dashboard" class="img-thumbnail rounded mx-auto d-block">
-              </div>
-              <div class="col-lg-6">
-                <h3>My Weather Dashboard</h3>
-                <p>This is a weather dashboard that allows the user to search for a city's weather data. It provides the
-                  current data as well as a five day forecast. Created with HTML, CSS, Javascript, jQuery, Bootstrap and
-                  AJAX API calls.
-                </p>
-                <a class="mattsButton" href="https://trojanface.github.io/weatherdashboard/" target="_blank">View
-                  Site</a>
-                  <a class="mattsButton" href="https://github.com/trojanface/weatherdashboard" target="_blank">View Repo</a>
-              </div>
+            <div class="col-lg-6">
+              <h3>Quarantine and Isolation Guide</h3>
+              <p>A web application designed to help people stay abreast of current news relating to the Coronavirus
+                outbreak. It features world news and Australian news with the option of adding state based statistics
+                also. Created using HTML, CSS, Javascript, jQuery, Tailwind and AJAX API calls.
+              </p>
+              <a class="mattsButton buzz-out-on-hover" href="https://amarr001.github.io/Project-1/" target="_blank">View Site</a>
+              <a class="mattsButton buzz-out-on-hover" href="https://github.com/amarr001/Project-1" target="_blank">View Repo</a>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-lg-6 mb-3">
+              <img src="desktop.png" alt="My Weather Dashboard" class="img-thumbnail rounded mx-auto d-block">
+            </div>
+            <div class="col-lg-6">
+              <h3>My Weather Dashboard</h3>
+              <p>This is a weather dashboard that allows the user to search for a city's weather data. It provides the
+                current data as well as a five day forecast. Created with HTML, CSS, Javascript, jQuery, Bootstrap and
+                AJAX API calls.
+              </p>
+              <a class="mattsButton buzz-out-on-hover" href="https://trojanface.github.io/weatherdashboard/" target="_blank">View
+                Site</a>
+              <a class="mattsButton buzz-out-on-hover" href="https://github.com/trojanface/weatherdashboard" target="_blank">View Repo</a>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-lg-6 mb-3">
+              <img src="kicksU.png" alt="Kicks United" class="img-thumbnail rounded mx-auto d-block">
+            </div>
+            <div class="col-lg-6">
+              <h3>Kicks United</h3>
+              <p>A full-stack application simulating an online shoe store. Sign-up new users, login and logout user
+                sessions and add & remove items from the cart. Created with HTML, CSS, Javascript, jQuery, Bootstrap,
+                mySQL, node.js, npm, sequelize, passport, bcrypt and
+                AJAX API calls.
+              </p>
+              <a class="mattsButton buzz-out-on-hover" href="https://kicksunited.herokuapp.com/" target="_blank">View
+                Site</a>
+              <a class="mattsButton buzz-out-on-hover" href="https://github.com/bhamann-collab/shop" target="_blank">View Repo</a>
             </div>
           </div>
         </div>
-
       </div>
+
+    
       <div class="hideme img-thumbnail rounded mx-auto d-block largeMarg row">
         <div class="offset-lg-1"></div>
-        <!--Contact form-->
-        <div class="col-lg-10">
-          <h1 id="contactMe">Get in touch</h1>
-          <form action="mailto:matthewjteague@outlook.com?subject='Profile Enquiry'&body=" method="post"
-            enctype="text/plain">
-            <label for="contactFormInput">Details</label>
-            <input type="text" name="name" class="form-control" placeholder="Name">
-            <div class="form-group">
-              <label for="contactFormInput">Email address</label>
-              <input type="email" class="form-control" id="contactFormInput" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label for="contactFormInputText">Message</label>
-              <textarea name="body" class="form-control" id="contactFormInputText" rows="3"></textarea>
-            </div>
-            <button type="submit" class="mattsButton btn btn-primary">Send</button>
-          </form>
-        </div>
+        <!--About me section-->
+        <div class="px-0 col-lg-10">
+        <h5>Get in touch - matthewjteague@outlook.com</h5>
+        <a href="mailto:matthewjteague@outlook.com?subject='Profile Enquiry'&body=" class="mattsButton btn btn-primary mt-4 hvr-bob bubble">Get in touch</a>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
 
