@@ -150,6 +150,9 @@ body {
     .alignR {
         text-align: right;
     }
+    .alignC {
+      text-align: center;
+  }
     .mattsnavbar a {
         font-family: 'Merriweather', serif;
         font-size: 35px;
