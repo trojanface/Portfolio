@@ -10,11 +10,11 @@ This is my portfolio website giving a brief explanation of who I am, an overview
 ## Link to Deployed App
 https://trojanface.github.io/Portfolio/
 
-## Installation
-1. Nil
-
 ## Usage
 1. Navigate to https://trojanface.github.io/Portfolio/
+2. Use the navbar along the side (desktop) or top (mobile) to jump to the different sections of my profile.
+3. Use the social media links to visit my other accounts.
+4. Use the email link to open an email in your default email application to contact me.
 
 ## License
 Public Domain
